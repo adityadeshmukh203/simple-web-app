@@ -43,11 +43,11 @@ pipeline {
 				post {
 					success {
 						echo "Application is deployed sucecsfully on Tomcat in staging env"
-							
+							mail bcc: '', body: 'Success', cc: '', from: '', replyTo: '', subject: 'Jenkins Deployment', to: 'aditya.deshmukh201996@gmail.com'
 							}
 					failure {
 						echo " Filed to deploy app. on tomcat server"
-						
+							mail bcc: '', body: 'Failed', cc: '', from: '', replyTo: '', subject: 'Jenkins Deployment', to: 'aditya.deshmukh201996@gmail.com'
 							}
 					}
 				}
