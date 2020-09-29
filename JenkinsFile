@@ -9,7 +9,7 @@ pipeline {
         stage("build") {
             steps {
                 echo "Building an application using maven"
-				sh 'mvn -f /var/lib/jenkins/workspace/GlidedRose/Java/pom.xml package'
+				sh 'mvn clean package'
 				}
 			post {
 				success{
