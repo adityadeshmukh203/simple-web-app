@@ -5,8 +5,8 @@
 </head>
 <body>
 	<div class="container">
-		<h3>Login Form</h3>
-		<form action="#" style="width: 40%">
+		<h3> Login Form </h3>
+		<form action="#" style="width: 50%">
 			<div class="form-group">
 				<label class="form-label">Username: </label>
 				<input type="text" class="form-control" />
